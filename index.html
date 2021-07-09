@@ -1,56 +1,38 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
-      rel="stylesheet"
-    />
-    <title>Virtual-Royaume</title>
-  </head>
-  <body>
-    <div class="main-container">
-      <h1>Welcome on Virtual-Royaume</h1>
-      <p>
-        This website is the entry point of github pages from the Virtual-Royaume.
-      </p>
-      <a href="https://discord.com/invite/RxTN8tFUQH">Join our discord</a>
-    </div>
 
-    <style>
-      body {
-        background-color: #4f39d5;
-      }
+<head>
+  <meta charset="UTF-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-      * {
-        font-family: 'Inter';
-        color: #ffffff;
-      }
+  <title>Virtual Royaume</title>
 
-      a {
-        background-color: #ebd953;
-        color: #000000;
-        padding: 8px;
-        border-radius: 8px;
-        text-decoration: none;
-      }
+  <link rel="stylesheet" href="./style/style.css">
 
-      a:hover {
-        text-decoration: underline;
-      }
+  <link rel="icon" href="/img/royaume-logo-white.png"/>
+</head>
 
-      .main-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
+<body>
+  <img src="./img/royaume-logo-white.png" alt="logo">
+  <h1>Virtual Royaume</h1>
+  <p><span id="writer"></span></p>
 
-      .main-container > * {
-        margin-bottom: 16px;
-      }
-    </style>
-  </body>
+  <a class="button" href="https://discord.com/invite/RxTN8tFUQH" target="_blank">
+    Join our discord
+  </a>
+
+  <div class="pages">
+    <!-- todo... -->
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+    new Typed("#writer", {
+      strings: ["This website is the entry point of github pages from the Virtual-Royaume"],
+      typeSpeed: 30,
+      loop: false
+    });
+  </script>
+</body>
+
 </html>
