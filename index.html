@@ -1,38 +1,55 @@
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8"/>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Virtual Royaume</title>
 
-  <title>Virtual Royaume</title>
+    <link rel="stylesheet" href="./style/style.css" />
 
-  <link rel="stylesheet" href="./style/style.css">
+    <link rel="icon" href="/img/royaume-logo-white.png" />
+  </head>
 
-  <link rel="icon" href="/img/royaume-logo-white.png"/>
-</head>
+  <body>
+    <img src="./img/royaume-logo-white.png" alt="logo" />
+    <h1>Virtual Royaume</h1>
+    <p>
+      <span id="writer">
+        This website is the entry point of github pages from the Virtual-Royaume
+      </span>
+    </p>
 
-<body>
-  <img src="./img/royaume-logo-white.png" alt="logo">
-  <h1>Virtual Royaume</h1>
-  <p><span id="writer"></span></p>
+    <a class="button" href="https://discord.com/invite/RxTN8tFUQH" target="_blank">
+      Join our discord
+    </a>
 
-  <a class="button" href="https://discord.com/invite/RxTN8tFUQH" target="_blank">
-    Join our discord
-  </a>
+    <div class="pages">
+      <!-- todo... -->
+    </div>
+  </body>
 
-  <div class="pages">
-    <!-- todo... -->
-  </div>
+  <style>
+    #writer {
+      width: 72ch;
+      animation: typing 4s steps(72), blink 0.5s step-end infinite alternate;
+      white-space: nowrap;
+      overflow: hidden;
+      padding-right: 2px;
+      border-right: 1px solid;
+      display: inline-block;
+    }
 
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-  <script>
-    new Typed("#writer", {
-      strings: ["This website is the entry point of github pages from the Virtual-Royaume"],
-      typeSpeed: 30,
-      loop: false
-    });
-  </script>
-</body>
+    @keyframes typing {
+      from {
+        width: 0;
+      }
+    }
 
+    @keyframes blink {
+      50% {
+        border-color: transparent;
+      }
+    }
+  </style>
 </html>
